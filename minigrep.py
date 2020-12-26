@@ -129,3 +129,4 @@ if __name__ == '__main__':
 
     # Do the grep the user has requested
     grep(**vars(parser.parse_args()))
+

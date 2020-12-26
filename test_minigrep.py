@@ -67,3 +67,4 @@ def test_grep_machine(files, capfd, regex, line_endings):
     assert len(stdout_lines) == len(line_endings)
     for line, ending in zip(stdout_lines, line_endings):
         assert line.endswith(ending)
+
