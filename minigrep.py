@@ -14,7 +14,7 @@ import ctypes
 
 class GrepFormatter:
     """This class simply formats grep results, exposing a single non-encapsulated method to call.
-    There are 3 allowed formats: base (normal), color (for match highlighting), machine (for machine readability).
+    There are 3 allowed formats: base (normal), color (for match highlighting), machine (for machine-readability).
     """
     def __init__(self, color, machine):
         """Initialize a GrepFormatter instance."""
@@ -96,7 +96,7 @@ def get_re_matches(regex, lines):
         # Save regular expression matches in the line
         re_matches = tuple(match for match in finditer(regex, line))
 
-        # If the are any matches
+        # If there are any matches
         if re_matches:
             # Yielding provides some output almost as soon as it is found, instead of all results at the end
             yield line_num, line, re_matches
